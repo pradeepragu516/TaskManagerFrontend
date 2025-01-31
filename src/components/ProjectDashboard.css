@@ -1,0 +1,279 @@
+/* Container for the entire dashboard */
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background: #2568FB;
+  overflow: hidden;
+  gap: 20px;
+}
+
+/* Left-side project sections */
+.projects-sections {
+  flex: 2;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0.2, 0.3, 0.3, 0.2);
+  overflow-y: auto;
+}
+
+.projects-sections h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Project Category - container for each status */
+.project-category {
+  /* flex: 1; */
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px rgba(0.5, 0.6, 0.6, 0.5);
+  min-height: 150px;
+  
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Category title and add button section */
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-header h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.add-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Project List - Responsive grid for project items */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+/* Styling for individual project cards */
+.project-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-weight: bold;
+  min-height: 60px;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.comment-icon {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Right-side statistics section */
+.statistics-section {
+  flex: 1;
+  background: lightskyblue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px rgba(0.2, 0.3, 0.3, 0.2);
+  overflow-y: auto;
+}
+
+.statistics-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.stats-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: 0px 8px 10px rgba(0.6, 0.5, 0.5, 0.6);
+}
+
+.stats-card h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.stats-card p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* .dashboard-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+} */
+
+.projects-sections {
+  flex: 3;
+  
+}
+
+.project-category {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-container {
+  /* display: flex; */
+  flex-grow: 2;
+  gap: 10px;
+  min-height: 100px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0.2, 0.3, 0.3, 0.2);
+  width: 200px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.comment-icon {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Statistics Section */
+.statistics-section {
+  flex: 1;
+  background: lightpink;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 8px 10px rgba(0.2, 0.3, 0.3, 0.2);
+}
+
+.stats-card {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.move-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.move-button:hover {
+  background: #0056b3;
+}
+
+.add-button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-button:hover {
+  background: #218838;
+}
+
+.add-task-btn {
+  background-color: #361f3a;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.add-task-btn:hover {
+  background-color: #580cd3;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

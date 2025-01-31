@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+IN:wght@100..400&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  /* Landing Page Styles */
+  .landing-page {
+    position: relative;
+    height: 100vh;
+    background: url('/src/assets/background.jpg') no-repeat center center/cover; /* Replace with your background image */
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #0056b3;
+    position: fixed;
+    width: 99%;
+    top: 1px;
+    z-index: 10;
+  }
+  
+  .mana {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .header-button {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    border-color: #0056b3;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+  
+  .header-button:hover {
+    background-color: #0056b3;
+    
+  }
+  
+  .header-button.signup {
+    border-color: #0056b3;
+    color: white;
+  }
+  
+  
+  .header-button.signup:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Overlay Styles */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  /* Content Styles */
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: cursive;
+    text-align: center;
+  }
+  
+  .content p {
+    font-size: 1.4rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-family: cursive;
+    text-align: center;
+  }
+  
+  /* Main Buttons */
+  .main-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .main-button {
+    align-content: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .main-button.signup {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .main-button.signup:hover {
+    background-color: #0056b3;
+  }
+  
+  .main-button.login {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .main-button.login:hover {
+    background-color: #1e7e34;
+  }
+  

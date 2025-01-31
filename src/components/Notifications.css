@@ -1,0 +1,106 @@
+/* ✅ Container Styles */
+.notification-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FECD45;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+  }
+  
+  /* ✅ Dark Mode */
+  .dark-mode .notification-container {
+    background: #2c2c2c;
+    color: white;
+  }
+  
+  /* ✅ Header */
+  .notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notification-header h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .theme-toggle, .mark-read-btn, .filter-dropdown {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .theme-toggle:hover, .mark-read-btn:hover {
+    background: #007bff;
+  }
+  
+  /* ✅ Notification List */
+  .notification-list {
+    margin-top: 20px;
+  }
+  
+  .notification-item {
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+  }
+  
+  .dark-mode .notification-item {
+    background: #3a3a3a;
+    color: white;
+  }
+  
+  .notification-item.unread {
+    font-weight: bold;
+    background: #fddde6;
+  }
+  
+  .notification-item.read {
+    font-weight: normal;
+  }
+  
+  .time {
+    font-size: 12px;
+    color: gray;
+    margin-left: 10px;
+  }
+  
+  .delete-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    color: darkred;
+  }
+  
+  /* ✅ No Notifications */
+  .no-notifications {
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+  }
+  

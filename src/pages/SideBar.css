@@ -1,0 +1,168 @@
+/* Sidebar Container */
+.sidebar {
+  height: 100vh;
+  background: #FECD45;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.expanded {
+  width: 250px;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  background: #e9ecef;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.toggle-btn:hover {
+  background: #0056b3;
+}
+
+.search-box {
+  padding: 10px 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav-item:hover {
+  background: #ddd;
+}
+
+.nav-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.sidebar.collapsed .nav-icon {
+  margin: 0 auto;
+}
+
+.sidebar.collapsed .nav-item span {
+  display: none;
+}
+
+.admin-only {
+  color:  #333;
+}
+
+.workspace {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #f1f3f5;
+  border-radius: 5px;
+}
+
+.workspace-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.workspace-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.workspace-list {
+  list-style: none;
+  padding: 0;
+}
+
+.workspace-item {
+  padding: 8px 0;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.workspace-item:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+.no-projects {
+  font-size: 14px;
+  color: #777;
+}
+
+.add-icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.add-icon:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .sidebar.expanded {
+    width: 200px;
+  }
+
+  .sidebar.collapsed {
+    width: 50px;
+  }
+
+  .toggle-btn {
+    padding: 6px 10px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+}

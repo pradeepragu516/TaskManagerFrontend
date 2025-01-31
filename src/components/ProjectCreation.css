@@ -1,0 +1,190 @@
+body {
+  overflow-x: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.project-form-container {
+  max-width: 900px;
+  min-width: 900px;
+  margin: auto;
+  background: #FECD45;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  flex-grow: 4;
+  height: 100vh; /* Adjusted height */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Form Title */
+.form-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.project-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input Fields */
+.input-field,
+.textarea-field,
+.date-field,
+.select-field,
+.priority-field,
+.file-field {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.3s ease-in-out;
+}
+
+.input-field {
+  background: white;
+  border-left: 5px solid #007bff;
+}
+
+.textarea-field {
+  height: 100px;
+  background: white;
+  border-left: 5px solid #ff9800;
+  resize: none;
+}
+
+.date-field {
+  background: white;
+  border-left: 5px solid #673ab7;
+}
+
+.select-field {
+  background: white;
+  border-left: 5px solid #4caf50;
+}
+
+.priority-field {
+  background: white;
+  border-left: 5px solid #ff5722;
+}
+
+.file-field {
+  background: white;
+  border-left: 5px solid #0288d1;
+}
+
+/* Form Row for Date Inputs */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Buttons */
+.form-buttons {
+  
+  bottom: 0;
+  background: #fff7e6;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-top: 2px solid #ccc;
+}
+
+.btn-submit,
+.btn-reset {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-submit {
+  background: #007bff;
+  color: white;
+}
+
+.btn-submit:hover {
+  background: #0056b3;
+}
+
+.btn-reset {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-reset:hover {
+  background: #a71d2a;
+}
+
+.team-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-add-team {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-add-team:hover {
+  background: #218838;
+}
+
+.team-members-list {
+  margin-top: 10px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.btn-remove-team {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-remove-team:hover {
+  background: #a71d2a;
+}
+
